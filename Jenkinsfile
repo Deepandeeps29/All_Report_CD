@@ -51,9 +51,10 @@ pipeline {
 
         stage('Deploy to Server') {
             steps {
-                bat '"D:\\Program\\Git\\usr\\bin\\scp.exe" -o StrictHostKeyChecking=no report.html welcome@192.168.68.115:/var/www/html/'
+                bat 'scp -o StrictHostKeyChecking=no C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\All_Report_CD\\report.html welcome@192.168.68.115:/var/www/html/'
             }
         }
+
     }
 
     post {
