@@ -12,7 +12,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 git credentialsId: 'f695a64c-2dde-4f15-9c36-a0c6dfe600ad',
-                    url: 'https://github.com/Deepandeeps29/All_Report.git',
+                    url: 'https://github.com/Deepandeeps29/All_Report_CD.git',
                     branch: 'main'
             }
         }
